@@ -195,6 +195,7 @@
 // 00000
 // 000000
 
+// ?1.yol
 // let sifir = "";
 // for (let i = 1; i < 7; i++) {
 //   sifir += "\n";
@@ -203,3 +204,12 @@
 //   }
 // }
 // console.log(sifir);
+// ?2.yol
+// let count = 1;
+// let str = "0";
+// let nl = "\n";
+// while (count <= 5) {
+//   console.log(str + nl);
+//   str += "0";
+//   count++;
+// }

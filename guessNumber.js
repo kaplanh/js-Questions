@@ -2,38 +2,70 @@
 // *            Tahmin oyunu-1.yol
 // * ============================================
 
-console.log("OYUN BASLASIN");
+// console.log("OYUN BASLASIN");
 
-let devam;
+// let devam;
+// do {
+//   let hak = 3;
+//   const rasgeleSayi = Math.floor(Math.random() * 100 + 1);
+//   // console.log(rasgeleSayi);
+
+//   do {
+//     const tahmin = Number(prompt("Lütfen 0-100 arasinda bir sayi giriniz:"));
+//     hak -= 1;
+//     if (tahmin === rasgeleSayi) {
+//       console.log(`Tebrikler ${3 - hak}. denemede bildiniz.🥳`);
+//       break;
+//     } else {
+//       console.log(`Dikkat ${hak} hakkiniz kaldi`);
+//       if (tahmin < rasgeleSayi) {
+//         console.log("ARTTIR ⬆️");
+//       } else {
+//         console.log("AZALT ⬇️");
+//       }
+//     }
+//   } while (hak > 0);
+
+//   if (hak === 0) {
+//     console.log("Üzgünüz oyunu kaybettiniz 😔");
+//   }
+
+//   devam = prompt("Yeniden oynamak ister misiniz e/h?");
+// } while (devam == "e" || devam == "E");
+
+// console.log("Yine bekleriz");
+
+let tekrarOyna;
+
 do {
-  let hak = 3;
-  const rasgeleSayi = Math.floor(Math.random() * 100 + 1);
-  // console.log(rasgeleSayi);
+  console.log("HAYDI BASLAYALIM");
+  let hak = 5;
+  // const cevap = Math.floor(Math.random() * 100 + 1);
+  const cevap = 44;
 
   do {
-    const tahmin = Number(prompt("Lütfen 0-100 arasinda bir sayi giriniz:"));
+    const tahmin = Number(prompt("Lütfen 0-100 arasinda bir sayi gir:"));
     hak -= 1;
-    if (tahmin === rasgeleSayi) {
-      console.log(`Tebrikler ${3 - hak}. denemede bildiniz.🥳`);
+    if (tahmin === cevap) {
+      console.log(`Tebrikler bildin. zihin okuyucu musun.🥳`);
       break;
     } else {
-      console.log(`Dikkat ${hak} hakkiniz kaldi`);
-      if (tahmin < rasgeleSayi) {
-        console.log("ARTTIR ⬆️");
+      if (tahmin < cevap) {
+        console.log("ARTTIR ⬆");
       } else {
-        console.log("AZALT ⬇️");
+        console.log("AZALT ⬇");
       }
     }
   } while (hak > 0);
 
-  if (hak === 0) {
-    console.log("Üzgünüz oyunu kaybettiniz 😔");
+  if (tahmin === cevap && hak === 0) {
+    console.log("Üzgünüm kaybettin 😢");
   }
 
-  devam = prompt("Yeniden oynamak ister misiniz e/h?");
-} while (devam == "e" || devam == "E");
+  tekrarOyna = prompt("Tekrar oynamak ister misin E/H?");
+} while (tekrarOyna == "E");
 
-console.log("Yine bekleriz");
+console.log("Bulmadan birakip gidecek misin?🔙");
 
 // * ============================================
 // *            Tahmin oyunu .yol
