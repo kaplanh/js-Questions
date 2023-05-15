@@ -77,9 +77,65 @@
 // }
 
 // soru-5 Bir sayının(number) basamak sayısını yazdıran kodu yazınız ?(Math.floor)
+// ?1.yol
+// let a = prompt(`enter number`);
+// console.log(`yor entered number ${a} is ${a.length} digits`);
 
+// ?2.yol
+// let sayi = prompt("Bir sayi giriniz");
+// let count = 1;
+// while (sayi / 10 > 1) {
+//   count++;
+//   sayi = Math.floor(sayi / 10);
+// }
+// console.log(count);
+
+// ?3.yol
+// let sayi = prompt("Sayinizi giriniz");
+// let sayac = 1;
+// for (let i = 0; ; i++) {
+//   if (sayi / 10 >= 1) {
+//     sayac++;
+//     sayi = Math.floor(sayi / 10);
+//   } else if (sayi / 10 < 1) {
+//     break;
+//   }
+// }
+// console.log(`Sayinizin basamak sayisi: ${sayac}`);
 
 // soru-6 Kullanıcıdan alınan n adet kadar olan Fibonacci dizisini aralarında boşluk olan string şekilde konsola yazdırınız ?  // 0 1 1 2 3 5 8 13
+// ?1.yol
+// let n = +prompt(`enter a number for fibonacci sequence`);
+// let one = 0;
+// let two = 0;
+// let sum = 1;
+// let res = "0";
+// for (let i = 0; i <= n; i++) {
+//   two = one;
+//   one = sum;
+//   res += " " + sum;
+//   sum = one + two;
+// }
+// console.log(res);
+// ?2.yol
+
+// let adet = +prompt("Kaç tane fibonacci sayisi istiyorsunuz");
+// while (adet <= 0) {
+//   adet = +prompt("0'dan büyük sayi girmeniz gerekiyor");
+// }
+// let kucukSayi = 0;
+// let buyukSayi = 1;
+// let toplamSayi;
+// let metin = "";
+
+// for (let i = 1; i <= adet; i++) {
+//   console.log(kucukSayi);
+//   toplamSayi = kucukSayi + buyukSayi;
+//   metin += " " + toplamSayi;
+//   kucukSayi = buyukSayi;
+//   buyukSayi = toplamSayi;
+// }
+// console.log(metin);
 
 // soru-7 Aşağıdaki çıktıyı konsola yazdırınız
 
@@ -88,15 +144,47 @@
 // * * * * *
 // * * * * *
 // * * * * *
+// let stars = "";
+// for (let i = 1; i < 6; i++) {
+//   if (i != 1) {
+//     stars += "\n";
+//   }
+//   for (let j = 1; j < 6; j++) {
+//     stars += "* ";
+//   }
+// }
+// console.log(stars);
 
-let stars = "";
-for (let i = 0; i < 5; i++) {
-  stars += "\n";
-  for (let j = 0; j < 5; j++) {
-    stars += "* ";
-  }
-}
-console.log(stars);
+// let stars = "";
+// for (let i = 1; i < 6; i++) {
+//   if (i != 1) {
+//     stars += "\n";
+//   }
+//   for (let j = 1; j < i; j++) {
+//     stars += "* ";
+//   }
+// }
+// console.log(stars);
+
+// let stars = "";
+// for (let i = 6; i > 1; i--) {
+//   if (i != 1) {
+//     stars += "\n";
+//   }
+//   for (let j = 1; j < i; j++) {
+//     stars += "* ";
+//   }
+// }
+// console.log(stars);
+
+// let stars = "";
+// for (let i = 0; i < 5; i++) {
+//   stars += "\n";
+//   for (let j = 0; j < 5; j++) {
+//     stars += "* ";
+//   }
+// }
+// console.log(stars);
 
 // soru-8 Aşağıdaki çıktıyı konsola yazdırınız ?
 
@@ -106,3 +194,12 @@ console.log(stars);
 // 0000
 // 00000
 // 000000
+
+// let sifir = "";
+// for (let i = 1; i < 7; i++) {
+//   sifir += "\n";
+//   for (let j = 1; j <= i; j++) {
+//     sifir += "0";
+//   }
+// }
+// console.log(sifir);
