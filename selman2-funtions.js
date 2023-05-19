@@ -94,15 +94,15 @@
 
 // ?tam bölenlerinin bir listesi
 
-const sumOfDivisors = (num) => {
-  list = [];
-  for (i = 0; i <= num; i++)
-    if (num % i == 0) {
-      list.push(i);
-    }
-  return list;
-};
-console.log(sumOfDivisors(12));
+// const sumOfDivisors = (num) => {
+//   list = [];
+//   for (i = 0; i <= num; i++)
+//     if (num % i == 0) {
+//       list.push(i);
+//     }
+//   return list;
+// };
+// console.log(sumOfDivisors(12));
 // 6- Belirli bir sayının asal olup olmadığını bulan fonksiyonu yazınız?
 // console.log(isPrime(7)) // output: true
 
