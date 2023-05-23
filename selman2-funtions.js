@@ -103,11 +103,45 @@
 //   return list;
 // };
 // console.log(sumOfDivisors(12));
-// 6- Belirli bir sayının asal olup olmadığını bulan fonksiyonu yazınız?
-// console.log(isPrime(7)) // output: true
 
-// 7- Bir sayının faktöriyelini hesaplayan bir fonksiyon yazınız.
+// *6- Belirli bir sayının asal olup olmadığını bulan fonksiyonu yazınız?
+// console.log(isPrime(7)) // output: true
+// const isPrime = (num) => {
+//   let count = 0;
+//   if (num == 0) {
+//     count++;
+//   } else if (num == 1) {
+//     count++;
+//   } else {
+//     for (i = 2; i < num; i++) {
+//       if (num % i == 0) {
+//         count++;
+//       } else {
+//         count = count;
+//       }
+//     }
+//   }
+//   let mesaj = count == 0 ? `${num} Asaldir` : `${num} Asal degildir`;
+//   return mesaj;
+// };
+
+// console.log(isPrime(7));
+// console.log(isPrime(0));
+// console.log(isPrime(1));
+// console.log(isPrime(25));
+//* 7- Bir sayının faktöriyelini hesaplayan bir fonksiyon yazınız.
 // console.log(factorial(5)) // output: 120
+// const factorial = (num) => {
+//   if (num <= 1) {
+//     return 1;
+//   } else {
+//     return num * factorial(num - 1);
+//   }
+// };
+// const number = +prompt("num: ");
+// number < 0
+//   ? alert("Number should be bigger zero")
+//   : console.log(`factorial(${number}) = ${factorial(number)}`);
 
 // 8- Bir dizi içerisindeki en büyük sayıyı bulan bir fonksiyon yazınız.
 // console.log(findMax([1, 2, 3, 4, 5, 6, 7, 8, 9])) // output: 9
@@ -122,7 +156,7 @@
 // 11- Girilen bir sayının pozitif çarpanlarını bulan bir fonksiyon yazınız
 // console.log(findPositiveDivisors(12)) // output: [1, 2, 3, 4, 6, 12]
 
-// 12-girilen bir cümlenin kelimelerinin bas harflerini büyük yapma
+//* 12-girilen bir cümlenin kelimelerinin bas harflerini büyük yapma
 // let str1 = " Hello, how ist it going?";
 // let str2 = str1.trim().split(" ");
 // console.log(str2);
