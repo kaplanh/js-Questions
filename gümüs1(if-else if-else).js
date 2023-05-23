@@ -8,15 +8,6 @@
 // 6-Login = Kullanıcı id ve şifre kontrolü(iç içe koşullar) // id doğru girerse passwordu istesin
 // 7-Hesap makinesi yapımı if else
 // 8-Switch case ile haftanın gününü yazdırma
-// 9-1'den n'ye kadar olan sayıların toplamını hesaplama
-// 10-3'e tam bölünenlere fizz, 5'e tam bölünenlere buzz yazdırma 15'e bölünene fizzbuzz
-// 11-1000 ile 2000 arasındaki 13 e bölümünden kalanı 3 olan sayıları yazdırma
-// 12-benzin istasyonu uygulaması
-// 13-atm uygulaması
-// 14-Beden kitle endeksini hesaplama
-// 15-Kullanıcıdan alınan sayıları negatif girilene kadar toplayan ve sonucunu konsola yazdıran kodu yazınız ?(while)
-// 16-Bir sayının(number) basamak sayısını yazdıran kodu yazınız ?(Math.floor)
-// 17-Fibonacci Dizisi oluşturma
 
 // !===============SOLITIONS===================
 //?1- Sayının pozitif mi yoksa negatif mi olduğunu bulan program;
@@ -134,8 +125,8 @@
 
 // ?8-Switch case ile haftanın gününü yazdırma
 
-const kacinci = +prompt("Gün:");
-let gün = "";
+// const kacinci = +prompt("Gün:");
+// let gün = "";
 
 // switch (kacinci) {
 //   case 1:
