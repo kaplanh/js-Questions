@@ -20,7 +20,14 @@
 // B = [11, 13, 17];
 // expectedOutput = [11, 13, 17];
 
-// ?siralanmis iki array icin
+A = [12,111,222, 14, 16];
+B = [11, 13, 17, 2];
+const myArray = A.concat(B).sort((a, b) => a-b);
+console.log(myArray);
+
+// const text = [1,"a",'al','Al', "b", "c", "d", "ali", "Z", "A", 111111,"Ali"];
+// console.log(text.sort((a,b)=>a-b));
+
 // const array1 = [12, 14, 16];
 // const array2 = [11, 13, 17];
 
