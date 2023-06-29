@@ -30,6 +30,14 @@ localStorage.setItem("lastname", "Smith");
 sessionStorage.setItem("lastname", "Smith");
 
 
+
+const harcamalarJSON = JSON.stringify(harcamalar);
+localStorage.setItem("harcamalar", harcamalarJSON);
+
+
 //!geri alma,cagirma(Retrieve) 
 localStorage.getItem("lastname")
 sessionStorage.getItem("lastname")
+
+const harcamalarJSON1 = JSON.parse(harcamalar);
+localStorage.getItem("harcamalar");
